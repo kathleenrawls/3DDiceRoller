@@ -1,7 +1,7 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.119.1/build/three.module.js'
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.119.1/examples/jsm/controls/OrbitControls.js';
 import * as CANNON from "https://unpkg.com/cannon-es@0.19.0/dist/cannon-es.js"
-import {dice, createCustomDice} from "/diceInfo.js"
+import {dice, createCustomDice} from "/3DDiceRoller/diceInfo.js"
 import { RoomEnvironment } from 'https://cdn.jsdelivr.net/npm/three@0.119.1/examples/jsm/environments/RoomEnvironment.js'
 import GUI from 'https://cdn.jsdelivr.net/npm/lil-gui@0.20.0/+esm';
 
@@ -33,7 +33,7 @@ document.getElementById("diceSetChoice").addEventListener("change", function (e)
     updateDiceList()
 })
 document.getElementById("environmentChoice").addEventListener("change", function (e) {
-    hdriLoader.load( ('/resources/' + e.target.value), function ( texture ) {
+    hdriLoader.load( ('/3DDiceRoller/resources/' + e.target.value), function ( texture ) {
         const envMap = pmremGenerator.fromEquirectangular( texture ).texture;
         texture.dispose(); 
         scene.environment = envMap
@@ -221,7 +221,7 @@ const pmremGenerator2 = new THREE.PMREMGenerator( renderer2 );
 // scene.background = pmremGenerator.fromScene( roomEnvironment ).texture;
 // scene.environment = pmremGenerator.fromScene( roomEnvironment ).texture;
 const hdriLoader = new THREE.TextureLoader()
-hdriLoader.load( '/resources/blueIndoorEnvironmentMap.jpg', function ( texture ) {
+hdriLoader.load( '/3DDiceRoller/resources/blueIndoorEnvironmentMap.jpg', function ( texture ) {
   const envMap = pmremGenerator.fromEquirectangular( texture ).texture;
   const envMap2 = pmremGenerator2.fromEquirectangular( texture ).texture;
   texture.dispose(); 
