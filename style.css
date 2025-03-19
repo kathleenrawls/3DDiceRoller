@@ -19,25 +19,25 @@ html, body {
 #closeBuilder {
     position: absolute;
     top: 2vh;
-    background-image: url("/resources/closeBtn.png");
+    background-image: url("/3DDiceRoller/resources/closeBtn.png");
 }
 
 #roll {
     position: absolute;
     top: 2vh;
-    background-image: url("/resources/rollBtn.png");
+    background-image: url("/3DDiceRoller/resources/rollBtn.png");
 }
 
 #sweep {
     position: absolute;
     top: 8vh;
-    background-image: url("/resources/sweepBtn.png");
+    background-image: url("/3DDiceRoller/resources/sweepBtn.png");
 }
 
 #reset {
     position: absolute;
     top: 14vh;
-    background-image: url("/resources/clearBtn.png");
+    background-image: url("/3DDiceRoller/resources/clearBtn.png");
 }
 
 #menu {
@@ -52,7 +52,7 @@ html, body {
     background-size: contain;
     background-color: transparent;
     border: none;
-    background-image: url("/resources/menuBtn.png");
+    background-image: url("/3DDiceRoller/resources/menuBtn.png");
 }
 
 #numDisplay {
@@ -157,7 +157,7 @@ input:checked + .slider:before {
     background-size: contain;
     background-color: transparent;
     border: none;
-    background-image: url("/resources/closeBtn.png");
+    background-image: url("/3DDiceRoller/resources/closeBtn.png");
     filter: invert(100%);
     position: relative;
     left: 0;
@@ -165,7 +165,7 @@ input:checked + .slider:before {
 }
 
 .diceSelector {
-    background-image: url("/resources/dice_roller_numbers_ui-01.png");
+    background-image: url("/3DDiceRoller/resources/dice_roller_numbers_ui-01.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
