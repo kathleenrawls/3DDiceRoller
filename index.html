@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>Dice Roller</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="/resources/dice_roller_favicon-01.png">
+	</head>
+	<body>
+	    
+	    <div id="diceBuilderContainer">
+	        <button class="leftButton" id="closeBuilder"></button>
+	    </div>
+	    
+	    <button class="leftButton" id="roll"></button>
+	    <button class="leftButton" id="sweep"></button>
+	    <button class="leftButton" id="reset"></button>
+	    <button id="menu"></button>
+	    <div id="menuDiv">
+	        <button id="menuCloseBtn"></button>
+	        <p>Current Set</p>
+	        <select name="diceSetChoice" id="diceSetChoice">
+                  <option value="gold">Gold</option>
+                  <option value="tealGlossy">Teal Glossy</option>
+                  <option value="blackAndRed">Black and Red</option>
+            </select>
+            <button id="addDiceSetBtn">Add Dice Set</button>
+            <p>Environment</p>
+            <select name="environmentChoice" id="environmentChoice">
+                  <option value="blueIndoorEnvironmentMap.jpg">Blue Indoors</option>
+                  <option value="outsideEnvironmentMap.jpg">Outside Environment</option>
+                  <option value="whiteIndoorEnvironmentMap.jpg">White Indoors</option>
+                  <option value="blackLineRoomEnvironmentMap.jpg">Black Line Indoors</option>
+                  <option value="futuristicSpaceEnvironmentMap.jpg">Futuristic Space</option>
+            </select>
+	        <label class="switch" id="autosweepChoice">
+	            <p>Autosweep</p>
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+            <label class="switch" id="autoreadChoice">
+	            <p>Autosum</p>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <label class="switch" id="visibleFloorChoice">
+	            <p>Visible Floor</p>
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+	    </div>
+	    <div id="bottomRow">
+	        <div class="diceSelector">
+	            <h1>0</h1>
+	            <h2>D4</h2>
+	        </div>
+	        <div class="diceSelector">
+	            <h1>0</h1>
+	            <h2>D6</h2>
+	        </div>
+	        <div class="diceSelector">
+	            <h1>0</h1>
+	            <h2>D8</h2>
+	        </div>
+	        <div class="diceSelector">
+	            <h1>0</h1>
+	            <h2>D10p</h2>
+	        </div>
+	        <div class="diceSelector">
+	            <h1>0</h1>
+	            <h2>D10</h2>
+	        </div>
+	        <div class="diceSelector">
+	            <h1>0</h1>
+	            <h2>D12</h2>
+	        </div>
+	        <div class="diceSelector">
+	            <h1>0</h1>
+	            <h2>D20</h2>
+	        </div>
+	    </div>
+	    <div id="numDisplay"><p></p></div>
+	    
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
