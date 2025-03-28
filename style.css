@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     height: 100%;
     overflow: hidden;
+    position: fixed;
 }
 
 .leftButton {
@@ -215,3 +216,12 @@ input:checked + .slider:before {
     width: 100%;
     display: none;
 }
+
+@media only screen and (max-width: 500px) {
+    #bottomRow {
+        flex-wrap: wrap;
+        height: 30vh;
+        justify-content: center;
+    }
+}
+
